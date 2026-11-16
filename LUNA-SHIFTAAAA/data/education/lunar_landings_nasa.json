@@ -1,0 +1,268 @@
+{
+  "dataset_id": "luna_shift_nasa_lunar_landings_education",
+  "version": "1.0.0",
+  "verified_on_utc_date": "2026-11-14",
+  "scope": "Five selected historical NASA successful lunar soft landings for educational visualization. Not a complete history of all countries or Moon missions.",
+  "coordinate_convention": {
+    "body": "Moon",
+    "latitude": "Planetocentric degrees north positive",
+    "longitude": "East positive [0, 360); west longitude converted by 360 - west",
+    "global_frame_note": "Apollo points are LRO-derived positions in lunar Mean Earth/Polar Axis DE421; Surveyor 1 is an approximate historical location. Check alignment with any global Moon texture or 3D mesh.",
+    "reference_radius_m_for_spherical_visualization_only": 1737400,
+    "physical_surface_altitude_m": null,
+    "regional_dem_coverage_note": "The professional polar LOLA DEM covers about 80-90 degrees south. None of these historical landings lies within that coverage."
+  },
+  "sources": [
+    {
+      "id": "NASA_NSSDCA_SURVEYOR",
+      "title": "Surveyor (1966–1968) — NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/surveyor.html",
+      "publisher": "NASA Goddard Space Flight Center / NSSDCA",
+      "supports": [
+        "Surveyor 1 landing date and time",
+        "Historical selenographic landing coordinates",
+        "Surveyor program overview"
+      ]
+    },
+    {
+      "id": "NASA_SCIENCE_SURVEYOR1",
+      "title": "Surveyor 1 — NASA Science",
+      "url": "https://science.nasa.gov/mission/surveyor-1/",
+      "publisher": "NASA Science",
+      "supports": [
+        "Robotic landing milestone",
+        "Surveyor 1 mission summary",
+        "Coordinate comparison and uncertainty"
+      ]
+    },
+    {
+      "id": "NASA_NSSDCA_APOLLO_SITES",
+      "title": "Apollo Landing Site Coordinates — NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "publisher": "NASA Goddard Space Flight Center / NSSDCA",
+      "supports": [
+        "LRO-derived Lunar Module locations",
+        "Mean Earth/Polar Axis DE421 coordinate frame"
+      ]
+    },
+    {
+      "id": "NASA_NSSDCA_APOLLO_LANDINGS",
+      "title": "Apollo Lunar Landings (1969–1972) — NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apolloland.html",
+      "publisher": "NASA Goddard Space Flight Center / NSSDCA",
+      "supports": [
+        "Apollo landing dates",
+        "Landing-region names",
+        "EVA duration and mission summary"
+      ]
+    },
+    {
+      "id": "NASA_HISTORY_APOLLO12",
+      "title": "55 Years Ago: Apollo 12 Makes a Pinpoint Landing on the Moon",
+      "url": "https://www.nasa.gov/history/55-years-ago-apollo-12-makes-a-pinpoint-landing-on-the-moon/",
+      "publisher": "NASA Johnson Space Center",
+      "supports": [
+        "Apollo 12 precision landing near Surveyor 3"
+      ]
+    },
+    {
+      "id": "NASA_APOLLO15_ROVER",
+      "title": "Apollo 15 Press Kit — NASA Science",
+      "url": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/a/Apollo_15-1.pdf",
+      "publisher": "NASA",
+      "supports": [
+        "Lunar Roving Vehicle on Apollo 15",
+        "Hadley–Apennine exploration objective"
+      ]
+    },
+    {
+      "id": "NASA_LUNAR_EXPLORATION_HISTORY",
+      "title": "History of Lunar Exploration — NASA Science",
+      "url": "https://science.nasa.gov/solar-system/moon/history-of-lunar-exploration/",
+      "publisher": "NASA Science",
+      "supports": [
+        "Apollo 17 Taurus–Littrow geology",
+        "Final Apollo lunar expedition",
+        "Moon program scientific context"
+      ]
+    },
+    {
+      "id": "NASA_APOLLO11_LEGACY",
+      "title": "Legacy of the Apollo 11 Moon Landing — NASA Science",
+      "url": "https://science.nasa.gov/wp-content/uploads/2023/09/Apollo11AnniversaryLitho_updated.pdf",
+      "publisher": "NASA Science",
+      "supports": [
+        "First human Moon landing",
+        "Apollo 11 scientific activity"
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "surveyor-1",
+      "name": "Surveyor 1",
+      "program": "Surveyor",
+      "mission_type": "robotic_lander",
+      "landing_date_utc": "1966-06-02",
+      "landing_time_utc": "06:17:36",
+      "landing_site": "Flamsteed P (Oceanus Procellarum)",
+      "latitude_deg": -2.45,
+      "longitude_deg_east": 316.79,
+      "coordinate_frame": "NSSDCA historical selenographic (approximate; not independently cross-registered to DE421)",
+      "coordinate_quality": "approximate_historical",
+      "achievement": "First successful U.S. robotic soft landing on the Moon.",
+      "description": "Surveyor 1 demonstrated a controlled, gentle robotic landing and returned photographs of the lunar surface.",
+      "educational_question": "Why did engineers need to test soft landings before sending astronauts?",
+      "topics": [
+        "robotics",
+        "landing_technology",
+        "lunar_surface"
+      ],
+      "sources": {
+        "coordinates": [
+          "NASA_NSSDCA_SURVEYOR"
+        ],
+        "landing_date": [
+          "NASA_NSSDCA_SURVEYOR"
+        ],
+        "history": [
+          "NASA_SCIENCE_SURVEYOR1",
+          "NASA_NSSDCA_SURVEYOR"
+        ]
+      },
+      "coordinate_note": "NASA NSSDCA lists 2.45° S, 316.79° E (43.21° W). A NASA Science page instead states approximately 2.46° S, 43.32° W. Treat this historical site marker as approximate; do not claim meter-scale accuracy."
+    },
+    {
+      "id": "apollo-11",
+      "name": "Apollo 11",
+      "program": "Apollo",
+      "mission_type": "crewed_landing",
+      "landing_date_utc": "1969-07-20",
+      "landing_time_utc": null,
+      "landing_site": "Mare Tranquillitatis (Sea of Tranquility)",
+      "latitude_deg": 0.67416,
+      "longitude_deg_east": 23.47314,
+      "coordinate_frame": "Moon Mean Earth/Polar Axis (DE421), LRO-derived Lunar Module location",
+      "coordinate_quality": "lro_derived_lunar_module",
+      "achievement": "First human landing on the Moon.",
+      "description": "Neil Armstrong and Buzz Aldrin landed in the Sea of Tranquility while Michael Collins remained in lunar orbit.",
+      "educational_question": "Why did the Apollo 11 crew choose a relatively smooth landing region?",
+      "topics": [
+        "human_exploration",
+        "firsts",
+        "lunar_samples"
+      ],
+      "sources": {
+        "coordinates": [
+          "NASA_NSSDCA_APOLLO_SITES"
+        ],
+        "landing_date": [
+          "NASA_NSSDCA_APOLLO_LANDINGS"
+        ],
+        "history": [
+          "NASA_APOLLO11_LEGACY"
+        ]
+      },
+      "coordinate_note": null
+    },
+    {
+      "id": "apollo-12",
+      "name": "Apollo 12",
+      "program": "Apollo",
+      "mission_type": "crewed_landing",
+      "landing_date_utc": "1969-11-19",
+      "landing_time_utc": null,
+      "landing_site": "Oceanus Procellarum (Ocean of Storms)",
+      "latitude_deg": -3.0128,
+      "longitude_deg_east": 336.5781,
+      "coordinate_frame": "Moon Mean Earth/Polar Axis (DE421), LRO-derived Lunar Module location",
+      "coordinate_quality": "lro_derived_lunar_module",
+      "achievement": "Precision landing near the earlier Surveyor 3 spacecraft.",
+      "description": "Apollo 12 landed close to Surveyor 3, enabling astronauts to inspect hardware that had spent years on the Moon.",
+      "educational_question": "How does a precision landing help scientists plan future missions?",
+      "topics": [
+        "navigation",
+        "precision_landing",
+        "robotics"
+      ],
+      "sources": {
+        "coordinates": [
+          "NASA_NSSDCA_APOLLO_SITES"
+        ],
+        "landing_date": [
+          "NASA_NSSDCA_APOLLO_LANDINGS"
+        ],
+        "history": [
+          "NASA_HISTORY_APOLLO12"
+        ]
+      },
+      "coordinate_note": "NASA NSSDCA lists the Lunar Module at 23.4219° W, stored as 336.5781° E."
+    },
+    {
+      "id": "apollo-15",
+      "name": "Apollo 15",
+      "program": "Apollo",
+      "mission_type": "crewed_landing",
+      "landing_date_utc": "1971-07-30",
+      "landing_time_utc": null,
+      "landing_site": "Hadley–Apennine",
+      "latitude_deg": 26.13239,
+      "longitude_deg_east": 3.6333,
+      "coordinate_frame": "Moon Mean Earth/Polar Axis (DE421), LRO-derived Lunar Module location",
+      "coordinate_quality": "lro_derived_lunar_module",
+      "achievement": "First crewed lunar mission to use the Lunar Roving Vehicle.",
+      "description": "Apollo 15 explored the Hadley–Apennine landscape using a lunar rover to reach geological sites beyond walking distance.",
+      "educational_question": "How did the lunar rover change what astronauts could investigate?",
+      "topics": [
+        "lunar_rover",
+        "geology",
+        "human_exploration"
+      ],
+      "sources": {
+        "coordinates": [
+          "NASA_NSSDCA_APOLLO_SITES"
+        ],
+        "landing_date": [
+          "NASA_NSSDCA_APOLLO_LANDINGS"
+        ],
+        "history": [
+          "NASA_APOLLO15_ROVER"
+        ]
+      },
+      "coordinate_note": null
+    },
+    {
+      "id": "apollo-17",
+      "name": "Apollo 17",
+      "program": "Apollo",
+      "mission_type": "crewed_landing",
+      "landing_date_utc": "1972-12-11",
+      "landing_time_utc": null,
+      "landing_site": "Taurus–Littrow Valley",
+      "latitude_deg": 20.1911,
+      "longitude_deg_east": 30.7723,
+      "coordinate_frame": "Moon Mean Earth/Polar Axis (DE421), LRO-derived Lunar Module location",
+      "coordinate_quality": "lro_derived_lunar_module",
+      "achievement": "Final crewed lunar landing of the Apollo program, including geologist Harrison Schmitt.",
+      "description": "Apollo 17 investigated the Taurus–Littrow valley, collecting rocks and volcanic materials to study lunar history.",
+      "educational_question": "What can a rock sample reveal about the Moon’s ancient volcanoes?",
+      "topics": [
+        "geology",
+        "human_exploration",
+        "lunar_samples"
+      ],
+      "sources": {
+        "coordinates": [
+          "NASA_NSSDCA_APOLLO_SITES"
+        ],
+        "landing_date": [
+          "NASA_NSSDCA_APOLLO_LANDINGS"
+        ],
+        "history": [
+          "NASA_LUNAR_EXPLORATION_HISTORY"
+        ]
+      },
+      "coordinate_note": null
+    }
+  ]
+}

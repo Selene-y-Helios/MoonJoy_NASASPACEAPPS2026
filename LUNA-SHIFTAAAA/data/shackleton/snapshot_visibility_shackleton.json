@@ -1,0 +1,37 @@
+{
+  "date_utc": "2026-11-14 12:00:00 UTC",
+  "site": {
+    "name": "Shackleton Rim",
+    "latitude_deg": -89.8026005358603,
+    "longitude_deg_east": 155.95074562959945,
+    "dem_elevation_m": -1343.598388671875,
+    "observer_height_m": 1.5
+  },
+  "method": "Center elevation > linear-interpolated terrain horizon elevation",
+  "source_files": [
+    "horizon_profile.json",
+    "celestial_positions.json"
+  ],
+  "bodies": {
+    "sun": {
+      "azimuth_deg": 324.56967,
+      "body_center_elevation_deg": 1.717458,
+      "terrain_horizon_elevation_deg": 9.009181,
+      "clearance_margin_deg": -7.291723,
+      "center_above_terrain_horizon": false
+    },
+    "earth": {
+      "azimuth_deg": 202.131414,
+      "body_center_elevation_deg": -4.304044,
+      "terrain_horizon_elevation_deg": 19.800502,
+      "clearance_margin_deg": -24.104546,
+      "center_above_terrain_horizon": false
+    }
+  },
+  "scientific_status": "preliminary; DEM/frames/SPICE must be cross-validated",
+  "does_not_test": [
+    "Radio link budget",
+    "Earth station visibility",
+    "Full celestial discs"
+  ]
+}

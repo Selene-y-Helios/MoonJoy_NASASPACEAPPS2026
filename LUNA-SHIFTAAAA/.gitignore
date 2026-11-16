@@ -1,0 +1,40 @@
+# Dependencies and local interpreters (reinstalled from manifests)
+**/.venv/
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+
+# Generated web assets and build intermediates
+web/dist/
+web/build/
+web/tsconfig.tsbuildinfo
+**/*.tsbuildinfo
+
+# Local secrets and editor files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.vscode/
+.idea/
+
+# Generated research caches, reports and local backups
+data/cache/
+**/.DS_Store
+*.log
+BACKUPS_ORBITS/
+VISUAL_FIRST_PERSON_BACKUP_*/
+UPDATE_FILES/
+APPLY_FIRST_PERSON_FIX.py
+APPLY_SPICE_ORBITS.py
+
+# Avoid accidentally versioning original downloaded archives
+*.zip
+
+# NOTE: Do NOT ignore NASA DEM TIFFs or JPL SPICE kernels.
+# Heavy binaries are tracked using Git LFS rules in .gitattributes.

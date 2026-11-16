@@ -1,0 +1,26 @@
+{
+  "timestampUTC": "2026-11-14T18:00:00.000Z",
+  "frame": "MOON_ME",
+  "earthFromMoonKm": [
+    310000,
+    70000,
+    210000
+  ],
+  "sunFromMoonKm": [
+    -100000000,
+    45000000,
+    88000000
+  ],
+  "sites": [
+    {
+      "id": "shackleton",
+      "name": "Borde de Shackleton (demo)",
+      "latitudeDeg": -89.7,
+      "longitudeDeg": 0,
+      "description": "Coordenada ilustrativa, no validada",
+      "tag": "POLO SUR"
+    }
+  ],
+  "source": "DATOS SIMULADOS",
+  "status": "demo"
+}

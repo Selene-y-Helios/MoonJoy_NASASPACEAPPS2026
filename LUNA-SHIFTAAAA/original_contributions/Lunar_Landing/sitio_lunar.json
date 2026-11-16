@@ -1,0 +1,10 @@
+{
+    "sitio": "Shackleton Rim",
+    "x_m": 3632.85313037963,
+    "y_m": -9586.065053909577,
+    "elevacion_m": -1437.750244140625,
+    "fila": 2117,
+    "columna": 2526,
+    "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+    "archivo_dem": "Site04_final_adj_5mpp_surf.tif"
+}

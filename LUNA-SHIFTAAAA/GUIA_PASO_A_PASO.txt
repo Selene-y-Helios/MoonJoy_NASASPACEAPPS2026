@@ -1,0 +1,12 @@
+INSTALACION DEL NUEVO LUNA SHIFT
+
+1. Extrae el ZIP completo en una carpeta nueva del Escritorio.
+2. De tu LUNA_SHIFT_Daniela_Unified anterior copia las carpetas data\dem y data\kernels a la nueva carpeta data. No borres el proyecto viejo.
+3. Haz doble clic en START_ALL.bat. La primera vez puede instalar Python y Node.
+4. Deja abiertas las ventanas API y WEBSITE. Abre la direccion Local que muestra Vite (ejemplo localhost:5173 o 5174).
+5. En Educational selecciona una de las cinco misiones NASA o toca sus marcadores y pulsa Learn.
+6. En Professional abre Science Data, selecciona Point A y Point B sobre el mapa del polo sur, elige fechas UTC y pulsa Calculate selected period.
+7. Presiona Explore selected site in 3D y usa Play para ver el horizonte y posiciones del Sol y la Tierra.
+8. Para comprobar datos ve a http://127.0.0.1:8000/api/health (regional_dem_ready y spice_ready deben ser true).
+
+IMPORTANTE: Es un modelo geometrico preliminar; Earth visible significa oportunidad geometrica de comunicacion, no un enlace RF certificado.

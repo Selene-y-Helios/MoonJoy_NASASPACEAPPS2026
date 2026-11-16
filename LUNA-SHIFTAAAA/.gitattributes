@@ -1,0 +1,6 @@
+# NASA/JPL scientific binaries. Git LFS required before committing these files.
+data/dem/*.TIF filter=lfs diff=lfs merge=lfs -text
+data/dem/*.tif filter=lfs diff=lfs merge=lfs -text
+data/dem/*.tiff filter=lfs diff=lfs merge=lfs -text
+data/kernels/*.bsp filter=lfs diff=lfs merge=lfs -text
+data/kernels/*.bpc filter=lfs diff=lfs merge=lfs -text

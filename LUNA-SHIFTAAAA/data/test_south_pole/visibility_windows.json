@@ -1,0 +1,44 @@
+{
+  "source": "NASA/JPL Horizons API",
+  "site_id": "test_south_pole",
+  "start_utc": "2026-11-15T00:00:00Z",
+  "end_utc": "2026-12-16T00:00:00Z",
+  "reference_horizon_deg": 0.0,
+  "terrain_horizon_applied": false,
+  "earth_apparent_disk_applied": false,
+  "radio_link_calculated": false,
+  "method": "linear_interpolation_between_sampled_center_elevations",
+  "input_samples": 2977,
+  "visible_window_count": 2,
+  "estimated_hours_center_above_0_deg": 348.9355,
+  "windows": [
+    {
+      "start_utc": "2026-11-15T00:00:00Z",
+      "end_utc": "2026-11-17T08:05:50Z",
+      "duration_hours": 56.0974,
+      "center_above_0_deg": false,
+      "state": "at_or_below_reference_horizon"
+    },
+    {
+      "start_utc": "2026-11-17T08:05:50Z",
+      "end_utc": "2026-11-30T06:58:22Z",
+      "duration_hours": 310.8756,
+      "center_above_0_deg": true,
+      "state": "above_reference_horizon"
+    },
+    {
+      "start_utc": "2026-11-30T06:58:22Z",
+      "end_utc": "2026-12-14T09:56:24Z",
+      "duration_hours": 338.9671,
+      "center_above_0_deg": false,
+      "state": "at_or_below_reference_horizon"
+    },
+    {
+      "start_utc": "2026-12-14T09:56:24Z",
+      "end_utc": "2026-12-16T00:00:00Z",
+      "duration_hours": 38.0599,
+      "center_above_0_deg": true,
+      "state": "above_reference_horizon"
+    }
+  ]
+}

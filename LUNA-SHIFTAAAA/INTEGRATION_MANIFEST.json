@@ -1,0 +1,16 @@
+{
+  "frontend_source": "lunar-spaceview(2).zip",
+  "science_sources": [
+    "LUNA_SHIFT_AB_Comparison_Update(1).zip",
+    "lunar landing.zip"
+  ],
+  "profiles": [
+    "Student",
+    "Professional",
+    "Mission Game"
+  ],
+  "language": "English",
+  "python_tests_passed": 30,
+  "typescript_check": "passed",
+  "scientific_data_import": "IMPORT_NASA_DATA.bat + original lunar landing.zip"
+}

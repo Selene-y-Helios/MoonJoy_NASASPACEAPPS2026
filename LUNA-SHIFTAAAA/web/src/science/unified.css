@@ -1,0 +1,77 @@
+/* Additive overlays for Daniela's existing SpaceView. No replacement layout. */
+.scene .mc-canvas{position:absolute;inset:0;width:100%;height:100%;min-height:0;border:0;border-radius:0;overflow:hidden;background:#020810}
+.scene .mc-canvas canvas{display:block}
+.scene .mc-canvas-loading{position:absolute;inset:0;display:grid;place-items:center;color:#b6d7e6;background:#081322bb;text-align:center;font-size:12px;pointer-events:none;padding:30px}
+.scene .mc-viewport-label{position:absolute;bottom:170px;left:22px;color:#b3d2e2;background:#0c1c2dbe;border:1px solid #304c60;border-radius:6px;padding:7px 9px;font-size:9px;letter-spacing:1px;pointer-events:none}
+.science-dock{position:absolute;top:112px;right:18px;bottom:176px;width:min(360px,calc(100% - 36px));z-index:19;display:flex;flex-direction:column;min-height:0;border:1px solid #30495e;border-radius:11px;background:#0e1a2aef;box-shadow:0 15px 55px #0009;backdrop-filter:blur(14px);color:#d9eaf4}
+.science-dock-header{display:flex;align-items:center;justify-content:space-between;padding:13px 14px;border-bottom:1px solid #294154;font-size:11px;font-weight:800;letter-spacing:1.2px;color:#b4e3ee}
+.science-dock-header>span{display:flex;align-items:center;gap:8px}
+.science-dock-header button{display:grid;place-items:center;width:25px;height:25px;border:1px solid #3b5368;border-radius:5px;background:#1b2d41;color:#d1e9f2}
+.science-dock-body{overflow-y:auto;padding:13px;scrollbar-width:thin;overscroll-behavior:contain}
+.science-source{font-size:10px;color:#7e9caf;margin-bottom:12px}
+.science-section{padding:12px 0 14px;border-top:1px solid #2c4254}
+.science-heading{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:800;letter-spacing:1px;color:#b8d8e8;margin-bottom:11px}
+.science-heading span{margin-left:auto;font-size:9px;color:#7fa9bb;letter-spacing:0}
+.science-switch{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0}
+.science-switch button,.science-link{border:1px solid #35546a;background:#142b3f;color:#a9d5e5;border-radius:7px;padding:8px 10px;font-size:11px;text-align:center;cursor:pointer}
+.science-switch button.selected{border-color:#6bd5e2;background:#21495c;color:#fff}
+.science-link{display:block;width:100%;margin:7px 0;text-align:left}
+.science-link:hover,.science-switch button:hover{background:#24445c}
+.science-link:disabled{opacity:.5;cursor:wait}
+.science-primary{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;padding:10px 11px;background:#1c6c83;border:1px solid #67cfdf;color:#e9fbff;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;margin:10px 0 0}
+.science-primary:hover{background:#287f98}.science-primary:disabled{opacity:.5;cursor:wait}
+.science-coordinates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:9px 0}
+.science-coordinates span{font-size:10px;color:#8ea9bc}.science-coordinates b{display:block;font-size:12px;color:#d7eaf4;margin-top:4px}
+.science-input-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.science-input-row label{display:grid;gap:5px;font-size:10px;color:#95b6c8}
+.science-input-row input{min-width:0;width:100%;background:#091829;border:1px solid #35536a;color:#e1f2fb;padding:8px;border-radius:6px;font-size:11px;color-scheme:dark}
+.science-polar-map{position:relative;aspect-ratio:1;max-height:300px;overflow:hidden;background:#081522;border:1px solid #38556c;border-radius:7px;cursor:crosshair;display:grid;place-items:center;color:#b1c6d6;font-size:11px}
+.science-polar-map img{width:100%;height:100%;object-fit:fill;display:block}
+.science-map-pin{position:absolute;transform:translate(-50%,-50%);width:23px;height:23px;border-radius:50%;border:2px solid white;display:grid;place-items:center;font-size:11px;font-weight:900;color:#0c1823;pointer-events:none}
+.science-map-pin.a{background:#77d8e7}.science-map-pin.b{background:#ffc58b}
+.science-table{border-collapse:collapse;width:100%;font-size:10px;line-height:1.5}
+.science-table td,.science-table th{padding:7px 5px;border-bottom:1px solid #283d50;text-align:left;font-weight:400}
+.science-table thead th{color:#83c8de;font-weight:700}
+.science-table td:last-child,.science-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;color:#e5f2f9}
+.science-caption{font-size:10px;line-height:1.6;color:#92acbe;margin:9px 0}
+.science-error{border:1px solid #a05b48;background:#402920;color:#ffd3bd;border-radius:7px;padding:10px;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+.science-disclaimer{display:flex;gap:8px;color:#b0a18c;font-size:10px;line-height:1.6;margin:12px 0}
+.science-verdict{display:flex;gap:8px;margin:9px 0;padding:10px;border-radius:7px;font-size:11px;line-height:1.6}
+.science-verdict.pass{border:1px solid #38896f;background:#15372e;color:#a9eed4}.science-verdict.fail{border:1px solid #a46b52;background:#422b21;color:#ffdac4}
+.science-dock .mc-horizon-svg,.science-horizon-ribbon .mc-horizon-svg{width:100%;height:auto;display:block;max-height:145px}
+.science-horizon-ribbon{position:absolute;bottom:181px;left:20px;width:min(420px,calc(100% - 410px));min-width:260px;z-index:14;padding:8px;border:1px solid #30495f;border-radius:9px;background:#0c1b2be3;backdrop-filter:blur(8px);pointer-events:none}
+.science-ribbon-heading{font-size:9px;font-weight:700;letter-spacing:1px;color:#b4d9e9;margin-bottom:5px}
+.science-timeline-source{color:#82dbe8;background:#123047;border:1px solid #2c6074;padding:5px 8px;border-radius:6px;font-size:10px;font-weight:700;letter-spacing:.5px}
+@media(max-width:1080px){.science-horizon-ribbon{display:none}.science-dock{width:min(330px,calc(100% - 32px))}}
+@media(max-width:700px){.science-dock{top:118px;right:9px;bottom:170px;width:min(310px,calc(100% - 18px))}.science-dock-body{padding:9px}.scene .mc-viewport-label{display:none}.focus-bar{max-width:calc(100% - 12px)}.focus-bar button{font-size:10px;padding:6px}.scene-top{top:13px;left:14px}}
+/* Additive crater annotations within Daniela's unchanged science dock. */
+.crater-map-label{position:absolute;z-index:2;transform:translate(-50%,-50%);padding:3px 5px;max-width:76px;font-size:8px;line-height:1.15;color:#e7f4fa;background:#091827de;border:1px solid #4e7287;border-radius:4px;cursor:pointer;white-space:normal;text-align:center;overflow-wrap:break-word}
+.crater-map-label:hover,.crater-map-label.active{background:#28748e;color:#fff;border-color:#a4eefa;z-index:4}
+.science-map-pin{z-index:6}
+.crater-detail{margin:9px 0 4px;display:grid;gap:8px;border:1px solid #29485d;border-radius:8px;background:#101f30;padding:9px}
+.crater-preview{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:16/9;background:#091522;display:grid;place-items:center}
+.crater-preview img{width:100%;height:100%;object-fit:cover;image-rendering:auto}
+.crater-preview span{position:absolute;bottom:0;left:0;right:0;background:#061321c9;color:#e2eaf1;padding:5px;font-size:9px}
+.crater-copy b{display:block;font-size:13px;color:#d7f4fe}.crater-copy small{display:block;font-size:10px;color:#85b2c6;margin-top:4px}.crater-copy p{font-size:11px;color:#b6cbd8;line-height:1.5;margin:7px 0}
+.crater-detail .science-link{display:flex;align-items:center;gap:6px;justify-content:center}
+.crater-detail .science-caption{display:flex;gap:6px}.science-external{display:inline-block;color:#92d5e4;font-size:10px;margin:5px 0}
+.science-lay-summary{background:#132c3d;border:1px solid #3b6376;border-radius:8px;padding:10px;color:#dceef6;font-size:11px;line-height:1.6;margin:10px 0}
+.science-lay-summary strong{color:#a9edf8}
+.mission-steps{display:flex;align-items:center;gap:4px;margin:8px 0 13px}.mission-steps span{flex:1;height:4px;border-radius:4px;background:#2c4355}.mission-steps span.done{background:#56c2d4}
+.mission-guide h3{font-size:13px;margin:4px 0;color:#e3f3fc}.mission-guide p{font-size:11px;line-height:1.65;color:#afcad9;margin:8px 0}.mission-guide .science-caption{color:#95b4c7}.mission-guide .lesson{border-left:3px solid #66cad9;padding:7px 10px;background:#132738;border-radius:3px}
+.mission-guide .lesson b{color:#bceff8}.mission-guide .mission-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mission-guide .mission-actions button{font-size:11px}
+
+/* In-dock analysis controls: keep Daniela's existing layout intact. */
+.science-calendar{display:grid;grid-template-columns:1fr;gap:9px;margin:8px 0}
+.science-calendar label,.science-step-label{display:grid;gap:5px;font-size:10px;color:#95b6c8}
+.science-calendar input,.science-step-label select{box-sizing:border-box;width:100%;min-width:0;background:#091829;border:1px solid #35536a;border-radius:6px;padding:8px;color:#e1f2fb;color-scheme:dark;font-size:11px}
+.science-step-label{margin-top:8px}
+.science-target-status{border:1px solid #39566a;background:#102a3e;border-radius:6px;padding:8px;font-size:10px;color:#b9d9e9}
+.science-target-status strong{color:#86d7ef}
+.science-action-hint{font-size:10px;color:#b0cddb;line-height:1.5}
+
+.science-timeseries{border:1px solid #2b4257;border-radius:7px;padding:8px;margin:8px 0;background:#071725;overflow:hidden}
+.science-timeseries svg{width:100%;height:auto;display:block}
+.science-timeseries-title{font-size:10px;color:#cbe5f4;font-weight:800;letter-spacing:.7px}
+.science-timeseries-title span{display:block;font-size:9px;color:#8da8bc;font-weight:400;letter-spacing:0;margin:3px 0}
+.science-timeseries-key{display:flex;flex-wrap:wrap;gap:8px;font-size:9px;color:#b9cbd8}

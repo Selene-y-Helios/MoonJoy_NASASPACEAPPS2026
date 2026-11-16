@@ -1,0 +1,30 @@
+{
+    "date_utc": "2026-11-14 12:00:00 UTC",
+    "site": {
+        "name": "Shackleton Rim",
+        "latitude_deg": -89.8026005358603,
+        "longitude_deg_east": 155.95074562959945,
+        "dem_elevation_m": -1343.598388671875,
+        "observer_height_m": 1.5
+    },
+    "sun": {
+        "azimuth_deg": 324.56967,
+        "elevation_deg": 1.717458,
+        "distance_km": 147798040.63,
+        "above_geometric_horizon": true
+    },
+    "earth": {
+        "azimuth_deg": 202.131414,
+        "elevation_deg": -4.304044,
+        "distance_km": 405401.971,
+        "above_geometric_horizon": false
+    },
+    "calculation_notes": {
+        "reference_frame": "MOON_ME",
+        "aberration_correction": "LT+S",
+        "visibility_model": "geometric_horizontal_plane",
+        "terrain_occlusion_included": false,
+        "body_disc_included": false,
+        "observer_light_time_approximation": true
+    }
+}
