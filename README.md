@@ -1,4 +1,4 @@
-# 🌕 MoonJoy — LUNA SHIFT
+# 🌕 MoonJoy
 
 **Lunar Landing Site Navigator | NASA Space Apps Challenge 2026**
 
